@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Vasanth.B</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HOME ===================== -->
+  <section id="home" class="section home-section">
+    <div class="home-bg-shape"></div>
+    <div class="home-content">
+      <div class="home-text reveal">
+        <p class="home-greeting">Hello, I'm</p>
+        <h1 class="home-name">Vasanth B</h1>
+        <h2 class="home-title">
+          <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="home-summary">
+          A passionate Computer Science student with a strong foundation in Java development,
+          web technologies, and problem-solving. I build clean, efficient, and user-friendly
+          digital experiences while constantly growing through new challenges.
+        </p>
+        <div class="home-buttons">
+          <a href="Vasanth_B_resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <!-- Social Links -->
+        <div class="home-socials">
+          <a href="https://www.linkedin.com/in/vasanth-b-b86a3b32b" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/vasanthb2006" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:vasanthb2006ai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="home-photo reveal">
+        <div class="photo-frame">
+          <img src="resume photo1.png" alt="Profile Photo" onerror="this.src='https://placehold.co/320x320/1a1a2e/f0c040?text=Your+Photo'" />
+        </div>
+        <div class="photo-badge"><i class="fas fa-code"></i> Software Engineer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title reveal">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-user"></i></div>
+          <h3>Who I Am</h3>
+          <p>
+            I am a dedicated Computer Science student with a deep passion for technology
+            and software development. I enjoy building meaningful projects that solve real-world
+            problems and constantly seek to improve my skills through hands-on experience.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Career Objective</h3>
+          <p>
+            To secure a challenging role as a software developer where I can apply my
+            knowledge of Java, web technologies, and problem-solving to contribute to
+            innovative projects and grow as a professional in the tech industry.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Tech Interests</h3>
+          <p>
+            Java Development &bull; Web Technologies &bull; Computer Networking &bull;
+            Data Structures &bull; Open Source Contribution &bull;
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-star"></i></div>
+          <h3>Personal Strengths</h3>
+          <ul class="strength-list">
+            <li><i class="fas fa-check-circle"></i> Strong Problem Solver</li>
+            <li><i class="fas fa-check-circle"></i> Team Player</li>
+            <li><i class="fas fa-check-circle"></i> Quick Learner</li>
+           
+            <li><i class="fas fa-check-circle"></i> Self-Motivated</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Education</span></h2>
+      <div class="timeline">
+
+        <!-- ---- EDIT EDUCATION CARDS HERE ---- -->
+        <div class="edu-card reveal">
+          <div class="edu-year">2024 – 2027</div>
+          <div class="edu-body">
+            <h3>Bachelor of Technology – Artificial Intelligence and Data Science</h3>
+            <p class="edu-institution"><i class="fas fa-university"></i> Anna univer
+              city / Kongunadu college of engineering and Technology,Thottiyam</p>
+            <p class="edu-detail">Year: Final Year &nbsp;|&nbsp; CGPA: <strong>8.0 / 10</strong></p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2021 – 2024</div>
+          <div class="edu-body">
+            <h3>Diploma Mechanical Engineering</h3>
+            <p class="edu-institution"><i class="fas fa-school"></i> Kongunadu Polytechnic College,Thottiyam</p>
+            <p class="edu-detail">Stream: Science (PCM) &nbsp;|&nbsp; Percentage: <strong>91%</strong></p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2020 – 2021</div>
+          <div class="edu-body">
+            <h3>Secondary School Education (10th Grade)</h3>
+            <p class="edu-institution"><i class="fas fa-school"></i> Sowdambikaa Matriculation Hr.Sec School, T.Pet</p>
+            <p class="edu-detail">Board: CBSE / State Board &nbsp;|&nbsp; Percentage: <strong>92%</strong></p>
+          </div>
+        </div>
+        <!-- ---- END EDUCATION CARDS ---- -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Skills</span></h2>
+      <div class="skills-wrapper">
+
+        <!-- Technical Skills -->
+        <div class="skills-group reveal">
+          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+          <div class="skills-bars">
+            <!-- EDIT SKILL NAME AND PERCENTAGE HERE -->
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Java</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>HTML</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>CSS</span><span class="skill-pct">50%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+           
+            </div>
+            
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Problem Solving</span><span class="skill-pct">88%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-group reveal">
+          <h3><i class="fas fa-people-group"></i> Soft Skills</h3>
+          <div class="soft-skill-grid">
+            <div class="soft-card"><i class="fas fa-comments"></i><span>Communication</span></div>
+            <div class="soft-card"><i class="fas fa-users"></i><span>Teamwork</span></div>
+            <div class="soft-card"><i class="fas fa-clock"></i><span>Time Management</span></div>
+            <div class="soft-card"><i class="fas fa-brain"></i><span>Critical Thinking</span></div>
+            <div class="soft-card"><i class="fas fa-lightbulb"></i><span>Creativity</span></div>
+            <div class="soft-card"><i class="fas fa-handshake"></i><span>Leadership</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- ---- EDIT / ADD PROJECT CARDS HERE ---- -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-brain project-icon"></i>
+            <h3>Focus & Habit Management System</h3>
+          </div>
+          <p class="project-desc">
+            A system that helps users improve concentration, manage tasks, and block
+            distracting mobile applications during focus sessions. Inspired by productivity
+            science and habit-tracking methodologies.
+          </p>
+          <div class="project-tech">
+            <span>Java</span><span>Android</span><span>SQLite</span>
+          </div>
+          <ul class="project-features">
+            <li><i class="fas fa-check"></i> App blocking during focus sessions</li>
+            <li><i class="fas fa-check"></i> Habit streaks and progress tracking</li>
+            <li><i class="fas fa-check"></i> Daily task scheduler & reminders</li>
+            <li><i class="fas fa-check"></i> Analytics dashboard for productivity</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> View Code</a>
+            <a href="#" class="btn btn-sm btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-globe project-icon"></i>
+            <h3>Personal Portfolio Website</h3>
+          </div>
+          <p class="project-desc">
+            A responsive, modern portfolio website built with pure HTML, CSS, and JavaScript
+            to showcase skills, projects, certificates, and achievements in a professional format.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <ul class="project-features">
+            <li><i class="fas fa-check"></i> Fully responsive for all devices</li>
+            <li><i class="fas fa-check"></i> Smooth scroll animations</li>
+            <li><i class="fas fa-check"></i> QR Code integration</li>
+            <li><i class="fas fa-check"></i> Certificate popup gallery</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> View Code</a>
+            <a href="#" class="btn btn-sm btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <!-- ADD MORE PROJECT CARDS FOLLOWING THE SAME PATTERN -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATES ===================== -->
+  <section id="certificates" class="section certificates-section">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Certificates</span></h2>
+      <p class="section-sub reveal">Click any certificate to view it in full size.</p>
+
+      <div class="cert-grid">
+        <!-- ---- ADD / REMOVE CERTIFICATE IMAGES HERE ---- -->
+        <!-- Replace src with your actual certificate image paths -->
+        <div class="cert-card reveal" onclick="openCertModal('images/certificates/cert1.jpg', 'Java Programming Certificate')">
+          <img src="images/certificates/cert1.jpg" alt="Java Programming Certificate"
+               onerror="this.src='https://placehold.co/400x280/1a1a2e/f0c040?text=Certificate+1'" />
+          <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          <p class="cert-title">Java Programming</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCertModal('images/certificates/cert2.jpg', 'Web Development Certificate')">
+          <img src="images/certificates/cert2.jpg" alt="Web Development Certificate"
+               onerror="this.src='https://placehold.co/400x280/1a1a2e/f0c040?text=Certificate+2'" />
+          <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          <p class="cert-title">Web Development</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCertModal('images/certificates/cert3.jpg', 'Problem Solving Certificate')">
+          <img src="images/certificates/cert3.jpg" alt="Problem Solving Certificate"
+               onerror="this.src='https://placehold.co/400x280/1a1a2e/f0c040?text=Certificate+3'" />
+          <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          <p class="cert-title">Problem Solving</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openCertModal('images/certificates/cert4.jpg', 'Networking Certificate')">
+          <img src="images/certificates/cert4.jpg" alt="Networking Certificate"
+               onerror="this.src='https://placehold.co/400x280/1a1a2e/f0c040?text=Certificate+4'" />
+          <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          <p class="cert-title">Computer Networks</p>
+        </div>
+        <!-- ---- END CERTIFICATE CARDS ---- -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div class="cert-modal" id="certModal" onclick="closeCertModal()">
+    <div class="cert-modal-box" onclick="event.stopPropagation()">
+      <button class="cert-modal-close" onclick="closeCertModal()"><i class="fas fa-times"></i></button>
+      <img src="" alt="" id="certModalImg" />
+      <p id="certModalTitle"></p>
+    </div>
+  </div>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Achievements</span></h2>
+      <div class="achievements-grid">
+
+        <!-- ---- EDIT ACHIEVEMENTS HERE ---- -->
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Online Courses</h3>
+          <p>Completed Java Programming Masterclass on Udemy (40+ hours). Completed JavaScript Full Course on freeCodeCamp.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Workshops</h3>
+          <p>Attended Web Development Workshop organized by the college technical club. Participated in Data Structures & Algorithms bootcamp.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Competitions</h3>
+          <p>Secured 2nd place in Inter-College Coding Competition. Participated in Smart India Hackathon (SIH) 2024.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Hackathons</h3>
+          <p>Participated in 24-hour college hackathon and developed a productivity app. Built a prototype during HackFest 2024.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Academic</h3>
+          <p>Consistently maintained CGPA above 8.5. Received Merit Scholarship for Academic Excellence in Semester 3.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-star"></i></div>
+          <h3>Extra Curricular</h3>
+          <p>Active member of College Coding Club. Organized a tech talk on open source software for juniors.</p>
+        </div>
+        <!-- ---- END ACHIEVEMENTS ---- -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME ===================== -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Resume</span></h2>
+      <div class="resume-box reveal">
+        <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+        <p>Download my latest resume to learn more about my skills, education, and experience.</p>
+        <a href="resume/resume.pdf" download class="btn btn-primary btn-lg">
+          <i class="fas fa-download"></i> Download Resume PDF
+        </a>
+
+        <!-- QR Code -->
+        <div class="qr-section">
+          <p class="qr-label">Or scan to visit this portfolio:</p>
+          <div id="qrcode"></div>
+          <p class="qr-url" id="qr-url-text"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title reveal">Contact <span>Me</span></h2>
+      <div class="contact-wrapper">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p>I'm always open to new opportunities, collaborations, or just a friendly chat about technology.</p>
+
+          <div class="contact-links">
+            <a href="mailto:vasanthb2006ai@gmail.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>vasanthb2006ai@gmail.com</span>
+            </a>
+            <a href="tel:+919999999999" class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 99999 99999</span>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/yourprofile</span>
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/yourusername</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-box reveal">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 <strong>Your Name</strong>. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/vasanth-b-b86a3b32b" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/vasanthb2006" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:vasanthb2006ai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
